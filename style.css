@@ -1,1 +1,325 @@
-enter a file.text
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     /* font-family: 'Open Sans', sans-serif; */
+     /* width: 100%; */
+     
+    }
+     body{
+        /* width: 100%; */
+     }
+   html ::-webkit-scrollbar{
+     /* display: none; */
+     /* scroll-behavior: smooth; */
+   }
+     nav{
+       
+       box-shadow: 0px 1px 3px rgb(65, 52, 52);
+       background: rgba(0, 0, 12,0.8);
+       position: sticky !important;
+       width: 100%;
+       /* height:50px; */
+       left: 0;
+       top:0;
+       z-index: 10;
+     }
+     span
+     {
+         background: linear-gradient(90deg,#f0f0f3,#f1ece8);
+        -webkit-background-clip: text;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         font-weight: 700  ;
+      }
+      .navbar-brand
+      {
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 20px;
+      }
+
+     .nav-link
+     {
+      border-bottom: 2px solid transparent; 
+      font-weight: bolder;
+      font-size: 15px;
+
+     }
+     li{
+      padding: 4px;
+
+     }
+
+      .nav-link:hover
+      {
+       border-bottom: 2px solid rgb(254, 255, 253);
+       color: #ff2600 !important;
+       transition: 0.3s ease-in-out;
+      }
+     .section{
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background: url(/bootstap/computer-laptop-light-glow.jpg);
+      background-position: center;
+      background-size: cover;
+     }
+     .text h2{
+   color: rgb(255, 254, 254) !important;
+   font-size: 20px;
+   letter-spacing: 6px;
+   font-weight: 550;
+   font-family: 'sans-serif';
+   line-height: 30px;
+  }
+ .text h1{
+  color: darkslateblue;
+  font-size: 50px;
+  font-weight: 600;
+ }
+ .span{
+   font-weight: 1000;
+   font-size: 40px;
+   background: linear-gradient(95deg,#16f0d3,#e0d204);
+   -webkit-background-clip: text;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   letter-spacing: 3px;
+   animation: case 2s ease-in-out;
+
+ }
+ @keyframes case {
+   0%{
+     opacity: 0;
+   
+   }
+
+   
+ }
+ .text p{
+   color: rgb(255, 255, 255) !important;
+   line-height: 30px;
+   letter-spacing: 2px;
+   margin: 9px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 500;
+ }
+
+ .mh-1:hover{
+   text-decoration: underline;
+   text-decoration-color: rgb(5, 5, 5);
+   text-underline-offset: 1rem;
+   cursor: pointer;
+ }
+
+.about{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: #f0f0f3;
+}
+ .circle{
+ background:rgba(1, 2, 1,0.3);
+ border-radius:  990px 950px  907px;
+ width: 400px;
+ height: 400px;
+ box-shadow: 0px 5px 12px rgba(0, 0, 12,0.8);
+ position: relative;
+ transition: 1s;
+} 
+.circle img{
+ position: absolute;
+ height: 350px;
+ width: 350px;
+ left: 35px ;
+ top: -30px;
+ filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+}
+.circle:hover{
+     width: 800px;
+     height: 420px;
+     border-radius: 20px;
+     transition: 1s;
+}
+.circle:hover img{
+     position: absolute;
+     left: -25px;
+     top: -10px;
+     transition: 1s;
+     width: 350px;
+     height: 400px;
+}
+.circle:hover .content{
+     width: 50%;
+     position: absolute;
+     top: 15%;
+     right: 0;
+     opacity: 1;
+     transition: 1s;
+     
+}
+ .circle .content{
+ opacity: 0;
+ }
+
+ @media screen and (max-width:520px){
+   .circle{
+    background:rgba(9, 209, 9, 0.3);
+    border-radius: 50%;
+    width: 370px;
+    height: 370px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 12,0.8);
+    position: relative;
+    transition: 1s;
+   }
+   .circle img{
+   position: absolute;
+   height: 300px;
+   width: 300px;
+   left: 20px ;
+   top: -10px;
+   filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+  }
+  .circle:hover img{
+     position: absolute;
+     left: 8%;
+     top: -20px;
+     transition: 1s;
+     width: 300px;
+     height: 300px;
+}
+.circle:hover{
+     width: 350px;
+     height: 800px;
+     border-radius: 20px;
+     transition: 1s;
+ }
+ .circle:hover .content{
+     width: 100%;
+     position: absolute;
+     top: 40%;
+     right: 0;
+     opacity: 1;
+     transition: 1s;
+     padding: 1px;
+ }
+ .circle .content{
+   opacity: 0;
+   }      
+ }
+   @media screen and (max-width:414px)
+     {
+       .circle{
+      background:rgba(1, 184, 216, 0.3);
+      border-radius: 50%;
+      width: 250px;
+      height: 340px;
+      box-shadow: 0px 5px 12px rgba(0, 0, 12,0.8);
+      position: relative;
+      transition: 1s;
+   }
+   .circle img{
+   position: absolute;
+   height: 260px;
+   width: 250px;
+   left: 10px ;
+   top: 10px;
+   filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+  }
+  .circle:hover img{
+     position: absolute;
+     left: 8%;
+     top: -20px;
+     transition: 1s;
+     width: 250px;
+     height: 260px;
+ }
+ .circle:hover{
+     width: 260px;
+     height: 700px;
+     border-radius: 20px;
+     transition: 1s;
+ }
+
+ .circle:hover .content{
+     width: 100%;
+     position: absolute;
+     top: 40%;
+     right: 0;
+     opacity: 1;
+     transition: 1s;
+     padding: 2px;
+     margin-left: 10px;      
+
+}
+}
+ .content p{
+   text-align: justify;
+ }
+ .icon{
+   font-size: 18px;
+   position: relative;
+   top: 4px;
+   left: 2px;
+ }
+ .i-1{
+  color:black !important;
+  box-shadow: 0px 0.5px 0px  rgb(0, 0, 0);
+ }
+ .i-1:hover{
+   color:maroon !important;
+   transition: 0.3s;
+ }
+ .i-2{
+  color:black !important;
+  box-shadow: 0px 0.5px 0px  rgb(0, 0, 0);
+ }
+ .i-2:hover{
+  color:maroon !important;
+  box-shadow: 0px 0.5px 0px  rgb(0, 0, 0);
+  transition: 0.3s;
+ }
+
+ .mh-2:hover{
+   text-decoration: underline;
+   text-decoration-color: rgb(5, 5, 5);
+   text-underline-offset: 1rem;
+   cursor: pointer
+ }
+ .form-group label{
+   color: black;
+   font-weight: 400;
+ }
+ .icons-2 ion-icon{
+   margin: 15px;
+   cursor: pointer;
+   background-color: rgba(240, 231, 231, 0.712);
+   border-radius: 50%;
+   transition: 0.4s ;
+ 
+
+ }
+ .icons-2 ion-icon:hover{
+   background-color:burlywood;
+   border-radius: 50%;
+ }
+ .call-2 ion-icon{
+   position: relative;
+   top: 10px;
+   cursor: pointer;
+ }
+ .call-2 a{
+   text-decoration: none;
+   color: black;
+ }
+ .call ion-icon{
+   position: relative;
+   top: 10px;
+   cursor: pointer;
+ }
+ #footer{
+   background: #16f0d3;
+ }
