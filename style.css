@@ -129,19 +129,21 @@
  height: 350px;
  width: 350px;
  left: 35px ;
- top: -30px;
- filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+ top: -20px;
+ /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99)); */
+ mix-blend-mode: multiply;
+ 
 }
 .circle:hover{
      width: 800px;
-     height: 420px;
+     height: 480px;
      border-radius: 20px;
      transition: 1s;
 }
 .circle:hover img{
      position: absolute;
-     left: -25px;
-     top: -10px;
+     left: 25px;
+     top: 10px;
      transition: 1s;
      width: 350px;
      height: 400px;
@@ -149,7 +151,7 @@
 .circle:hover .content{
      width: 50%;
      position: absolute;
-     top: 15%;
+     top: 30px;
      right: 0;
      opacity: 1;
      transition: 1s;
@@ -161,7 +163,7 @@
 
  @media screen and (max-width:520px){
    .circle{
-    background:rgba(9, 209, 9, 0.3);
+    background:rgba(90, 92, 90, 0.3);
     border-radius: 50%;
     width: 370px;
     height: 370px;
@@ -175,7 +177,9 @@
    width: 300px;
    left: 20px ;
    top: -10px;
-   filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+   /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99)); */
+   mix-blend-mode: multiply;
+
   }
   .circle:hover img{
      position: absolute;
@@ -207,7 +211,7 @@
    @media screen and (max-width:414px)
      {
        .circle{
-      background:rgba(1, 184, 216, 0.3);
+      background:rgba(70, 71, 71, 0.3);
       border-radius: 50%;
       width: 250px;
       height: 340px;
@@ -219,9 +223,9 @@
    position: absolute;
    height: 260px;
    width: 250px;
-   left: 10px ;
+   left: 0px ;
    top: 10px;
-   filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99));
+   /* filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.99)); */
   }
   .circle:hover img{
      position: absolute;
@@ -287,18 +291,21 @@
    color: black;
    font-weight: 400;
  }
- .icons-2 ion-icon{
+ .icons-2 a{
    margin: 15px;
    cursor: pointer;
-   background-color: rgba(240, 231, 231, 0.712);
+   background-color: rgb(240, 231, 231);
    border-radius: 50%;
    transition: 0.4s ;
- 
+   width: 50px;
+   height: 50px;
+   line-height: 70px;
+   box-shadow:0px 0px 10px rgb(73, 72, 72,1.232);
 
  }
  .icons-2 ion-icon:hover{
-   background-color:burlywood;
-   border-radius: 50%;
+   color: #2f00ff;
+  transition: 0.5s;
  }
  .call-2 ion-icon{
    position: relative;
@@ -314,6 +321,12 @@
    top: 10px;
    cursor: pointer;
  }
- #footer{
-   background: #16f0d3;
- }
+ 
+.card-1{
+    color: #f1ece8;
+    box-shadow: 0px 0px 10px rgb(110, 109, 109);
+    border-radius: 5px;
+}
+.footer{
+  background-color: black !important;
+}
